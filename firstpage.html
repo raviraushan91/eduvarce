@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi's Portfolio</title>
+  <link rel="stylesheet" href="firstpage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Ravi</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="weather.html"><i class="fas fa-cloud-sun"></i> Weather</a></li>
+      <li><a href="course.html"><i class="fas fa-book-open"></i> Courses</a></li>
+      <li><a href="#notes"><i class="fas fa-sticky-note"></i> Notes</a></li>
+
+      <li class="dropdown">
+        <a href="#entertainment"><i class="fas fa-theater-masks"></i> Entertainment <i
+            class="fas fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#music"><i class="fas fa-music"></i> Music</a></li>
+          <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
+        </ul>
+      </li>
+
+
+      <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- Weather bar below navbar, left side -->
+  <div class="weather-info" id="weather-info">🌤️ 25°C, Sunny - Lucknow</div>
+
+  <header>
+    <div class="header-content">
+      <h1>Hey, I'm Ravi 👋</h1>
+      <p>Coder • Learner • Explorer</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <img src="https://via.placeholder.com/300x400" alt="Ravi" />
+      <div class="about-text">
+        <p>I'm a B.Tech CSE student passionate about web development, data science, and building digital experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>Modern responsive site with weather, gallery, and games.</p>
+      </div>
+      <div class="project-card">
+        <h3>🗺️ Map Navigation</h3>
+        <p>Find shortest paths using Dijkstra's algorithm.</p>
+      </div>
+      <div class="project-card">
+        <h3>📊 Data Dashboard</h3>
+        <p>Visualized data using Seaborn, Matplotlib & Pandas.</p>
+      </div>
+    </div>
+  </section>
+  <section id="entertainment">
+    <h2 class="section-title">Entertainment</h2>
+    <div class="entertainment-options">
+      <a href="music.html" class="ent-btn"><i class="fas fa-music"></i> Music</a>
+      <a href="game.html" class="ent-btn"><i class="fas fa-gamepad"></i> Games</a>
+    </div>
+  </section>
+
+  <section id="music">
+    <h3>🎵 Music</h3>
+    <p>Your embedded music player will go here.</p>
+  </section>
+
+  <section id="games">
+    <h3>🎮 Games</h3>
+    <p>Cool mini-games section coming soon!</p>
+  </section>
+
+
+  <section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact">
+      <p>If you'd like to reach out to me, fill in the form below, and I'll get back to you as soon as possible!</p>
+      <form action="#" method="post" class="contact-form">
+        <div class="input-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Ravi Kumar. Crafted with ❤️</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</body>
+
+</html>

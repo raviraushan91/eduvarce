@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music | Ravi</title>
+    <link rel="stylesheet" href="music_css.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script defer src="./musicjs.js"></script>
+</head>
+<script>
+    // GSAP animation
+    gsap.from(".music-overlay", {
+        y: -50,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+    });
+
+    gsap.from(".music-grid .music-card", {
+        scale: 0.9,
+        opacity: 0,
+        stagger: 0.1,
+        delay: 0.5,
+        duration: 0.5,
+        ease: "power2.out",
+    });
+</script>
+
+<body>
+    <!-- Hero Section with Wave -->
+    <section class="music-hero">
+        <div class="music-overlay">
+            <h1>Explore Music</h1>
+            <p>Search and enjoy your favorite tracks</p>
+            <input type="text" id="music-search" placeholder="Search for music..." oninput="searchMusic()" />
+        </div>
+
+        <!-- SVG Wave Background -->
+        <!-- <svg class="wave-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#6a5acd" fill-opacity="1"
+                d="M0,128L60,122.7C120,117,240,107,360,106.7C480,107,600,117,720,133.3C840,149,960,171,1080,181.3C1200,192,1320,192,1380,192L1440,192V320H1380C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320H0Z">
+            </path>
+        </svg> -->
+    </section>
+
+    <!-- Music Player Section -->
+    <section class="custom-audio-player">
+        <h2>Listen Now</h2>
+        <button id="toggle-dark-mode">🌙</button>
+
+        <div class="player-box">
+            <!-- <img id="cover-art" src="./assets/covers/song1.jpg" alt="cover" /> -->
+
+            <div class="controls">
+                <button onclick="prevTrack()">⏮️</button>
+                <audio  id="audio-player" controls></audio>
+                <button onclick="nextTrack()">⏭️</button>
+            </div>
+
+            <ul class="playlist" id="playlist">
+                <li onclick="loadTrack(0)">🎵 Aa Jaana Aa</li>
+                <li onclick="loadTrack(1)">🎵 Beimaan Piya Re</li>
+                <li onclick="loadTrack(2)">🎵 Chori Chori</li>
+                <li onclick="loadTrack(3)">🎵 College Ki Ladkiyan</li>
+                <li onclick="loadTrack(4)">🎵 Dheere Dheere</li>
+                <li onclick="loadTrack(5)">🎵 Dil Ki Kalam Se</li>
+                <li onclick="loadTrack(6)">🎵 Dil Le Gaya Pardesi</li>
+                <li onclick="loadTrack(7)">🎵 Dil Pardesi Ho Gaya</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="music-results-section">
+        <h2>Search Results</h2>
+        <div class="music-grid" id="music-results"></div>
+    </section>
+
+    <!-- Suggested Section -->
+    <section class="suggested-section">
+        <h2>Suggested for You</h2>
+        <div class="music-grid" id="suggested-music"></div>
+    </section>
+
+    
+</body>
+
+</html>

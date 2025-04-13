@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | Your Portfolio</title>
+    <link rel="stylesheet" href="course_css.css" />
+    <script src="coursejs.js" defer></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo" style= text-align:center;>📘 Courses</div>
+            <a href="firstpage.html" class="back-btn">
+                ⬅ Home
+              </a>
+              
+    </header>
+    
+
+    <main class="course-content">
+        <input type="text" id="course-search" placeholder="Search courses..." />
+        <section class="background">
+            <svg viewBox="0 0 1440 320" class="waves" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#2c5364" d="M0,96L1440,128L1440,320L0,320Z"></path>
+            </svg>
+          </section>
+        <h1>Available Courses</h1>
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>💻 Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="course-card" data-title="Python"
+                data-description="Learn Python from basics to advanced including OOP, file handling, and more.">
+                <h3>Python</h3>
+                <button class="view-btn">View Details</button>
+            </div>
+
+            <div class="course-card">
+                <h3>🧠 Data Science</h3>
+                <ul>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+            <div class="course-card">
+                <h3>🌐 Web Development</h3>
+                <ul>
+                    <li>HTML / CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    
+      
+
+</body>
+
+</html>

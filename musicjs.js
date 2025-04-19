@@ -9,37 +9,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const tracks = [
     {
       name: "Dil Le Gaya Pardesi",
-      file: "assets/music/Dil Pardesi Ho Gaya(MyMp3Song).mp3",
+      file: "Dil Pardesi Ho Gaya(MyMp3Song).mp3",
       cover: "assets/covers/dil-le-gaya-pardesi.jpg",
     },
     {
       name: "Aa Jaana Aa",
-      file: "assets/music/aa-jaana-aa-]Subhash Download Rafiganj  (13).mp3",
+      file: "aa-jaana-aa-]Subhash Download Rafiganj  (13).mp3",
       cover: "assets/covers/aa-jaana-aa.jpg",
     },
     {
       name: "Chori Chori",
-      file: "assets/music/Chori Chori(MyMp3Song).mp3",
+      file: "Chori Chori(MyMp3Song).mp3",
       cover: "assets/covers/chori-chori.jpg",
     },
     {
       name: "College Ki Ladkiyan",
-      file: "assets/music/College Ki Ladkiyan.mp3",
+      file: "College Ki Ladkiyan.mp3",
       cover: "assets/covers/college-ki-ladkiyan.jpg",
     },
     {
       name: "Dheere Dheere",
-      file: "assets/music/dheere-dheere.mp3",
+      file: "dheere-dheere.mp3",
       cover: "assets/covers/dheere-dheere.jpg",
     },
     {
       name: "Dil Ki Kalam Se",
-      file: "assets/music/dil-ki-kalam-se.mp3",
+      file: "dil-ki-kalam-se.mp3",
       cover: "assets/covers/dil-ki-kalam-se.jpg",
     },
     {
       name: "Dil Pardesi Ho Gaya",
-      file: "assets/music/Dil Pardesi Ho Gaya(MyMp3Song).mp3",
+      file: "Dil Pardesi Ho Gaya(MyMp3Song).mp3",
       cover: "assets/covers/dil-pardesi-ho-gaya.jpg",
     },
   ];
